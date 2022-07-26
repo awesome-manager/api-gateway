@@ -1,0 +1,9 @@
+{
+  "endpoints": [
+    {
+      "endpoint": "/api/v1/employees",
+      "method": "GET",
+      "backend": "http://team-data"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{{- if .headers -}}
+  "headers_to_pass": {{ marshal .headers }},
+{{- else if eq .method "POST" -}}
+  "headers_to_pass": ["Content-Type", "Content-Length"],
+{{- end -}}

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "name": "{{ .config.name }}",
+  "port": {{ .config.port }},
+  "cache_ttl": "{{ .config.cache_ttl }}",
+  "timeout": "{{ .config.timeout }}",
+  "extra_config": {{ marshal .extra_config }},
+  "endpoints": [
+    {{- template "const.tmpl" -}}
+    {{ template "endpoints.tmpl" .api }}
+    {{ marshal .healthcheck }}
+  ]
+}

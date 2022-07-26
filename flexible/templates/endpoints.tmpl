@@ -1,0 +1,24 @@
+{{ range .endpoints }}
+  {
+    "endpoint": "{{ .endpoint }}",
+    "output_encoding": "{{ template "encoding" }}",
+    "method": "{{ .method }}",
+    {{ template "headers.tmpl" . -}}
+    {{ template "query.tmpl" . -}}
+    {{ if .timeout -}}
+      "timeout": "{{ .timeout }}",
+    {{- end }}
+    {{ if .extra_config -}}
+      "extra_config": {
+        {{ template "extra_config.tmpl" .extra_config }}
+      },
+    {{- end }}
+    "backend": [
+      {
+        "host": ["{{ .backend }}"],
+        "url_pattern": "{{ if .backend_url }}{{ .backend_url }}{{ else }}{{ .endpoint }}{{ end }}",
+        "encoding": "{{ template "encoding" }}"
+      }
+    ]
+  },
+{{- end }}

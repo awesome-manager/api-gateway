@@ -1,0 +1,5 @@
+{{- $prevKey := "" -}}
+{{- define "comma" }}{{ if . }},{{ end }}{{ end -}}
+{{ range $key, $item := . }}
+    {{- $prevKey = $key -}}
+{{ end }}

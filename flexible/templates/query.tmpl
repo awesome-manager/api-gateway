@@ -1,0 +1,5 @@
+{{- if .query -}}
+  "querystring_params": {{ marshal .query }},
+{{- else if eq .method "GET" -}}
+  "querystring_params": ["*"],
+{{- end -}}

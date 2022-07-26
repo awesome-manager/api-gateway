@@ -1,0 +1,21 @@
+{
+  "endpoint": "/healthcheck",
+  "extra_config": {
+    "github.com/devopsfaith/krakend/proxy": {
+      "static": {
+        "data": {
+          "success": true
+        },
+        "strategy": "always"
+      }
+    }
+  },
+  "backend": [
+    {
+      "url_pattern": "/",
+      "host": [
+        "http://fake-backend"
+      ]
+    }
+  ]
+}

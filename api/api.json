@@ -4,6 +4,11 @@
       "endpoint": "/api/v1/employees",
       "method": "GET",
       "backend": "http://team-data"
+    },
+    {
+      "endpoint": "/api/v1/vacations",
+      "method": "GET",
+      "backend": "http://team-data"
     }
   ]
 }

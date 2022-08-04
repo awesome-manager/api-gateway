@@ -9,6 +9,11 @@
       "endpoint": "/api/v1/vacations",
       "method": "GET",
       "backend": "http://team-data"
+    },
+    {
+      "endpoint": "/api/v1/projects",
+      "method": "GET",
+      "backend": "http://project-data"
     }
   ]
 }

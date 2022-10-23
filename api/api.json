@@ -16,6 +16,11 @@
       "backend": "http://project-data"
     },
     {
+      "endpoint": "/api/v1/projects",
+      "method": "POST",
+      "backend": "http://project-data"
+    },
+    {
       "endpoint": "/api/v1/statuses",
       "method": "GET",
       "backend": "http://project-data"

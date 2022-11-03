@@ -34,6 +34,24 @@
       "endpoint": "/api/v1/customers",
       "method": "GET",
       "backend": "http://project-data"
+    },
+    {
+      "endpoint": "/api/v1/token/client",
+      "method": "POST",
+      "backend": "http://idm-data",
+      "headers": ["Authorization", "Content-Type", "Content-Length"]
+    },
+    {
+      "endpoint": "/api/v1/token/user",
+      "method": "POST",
+      "backend": "http://idm-data",
+      "headers": ["Authorization", "Content-Type", "Content-Length"]
+    },
+    {
+      "endpoint": "/api/v1/user",
+      "method": "GET",
+      "backend": "http://idm-data",
+      "headers": ["Authorization", "Content-Type", "Content-Length", "User-Token"]
     }
   ]
 }

@@ -48,10 +48,16 @@
       "headers": ["Authorization", "Content-Type", "Content-Length"]
     },
     {
+      "endpoint": "/api/v1/token/refresh",
+      "method": "POST",
+      "backend": "http://idm-data",
+      "headers": ["Authorization", "Content-Type", "Content-Length"]
+    },
+    {
       "endpoint": "/api/v1/token/user",
       "method": "DELETE",
       "backend": "http://idm-data",
-      "headers": ["Authorization", "Content-Type", "Content-Length"]
+      "headers": ["Authorization", "Content-Type", "Content-Length", "User-Token"]
     },
     {
       "endpoint": "/api/v1/user",

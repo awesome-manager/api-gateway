@@ -64,6 +64,24 @@
       "method": "GET",
       "backend": "http://idm-data",
       "headers": ["Authorization", "Content-Type", "Content-Length", "User-Token"]
+    },
+    {
+      "endpoint": "/api/v1/user/{id}",
+      "method": "POST",
+      "backend": "http://idm-data",
+      "headers": ["Authorization", "Content-Type", "Content-Length", "User-Token"]
+    },
+    {
+      "endpoint": "/api/v1/user/{id}/image",
+      "method": "POST",
+      "backend": "http://idm-data",
+      "headers": ["Authorization", "Content-Type", "Content-Length", "User-Token"]
+    },
+    {
+      "endpoint": "/api/v1/user/{id}/image",
+      "method": "DELETE",
+      "backend": "http://idm-data",
+      "headers": ["Authorization", "Content-Type", "Content-Length", "User-Token"]
     }
   ]
 }

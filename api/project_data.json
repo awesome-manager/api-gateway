@@ -1,0 +1,25 @@
+{
+  "host": "http://project-data",
+  "endpoints": [
+    {
+      "endpoint": "/api/v1/projects",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/api/v1/projects",
+      "method": "POST"
+    },
+    {
+      "endpoint": "/api/v1/statuses",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/api/v1/groups",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/api/v1/customers",
+      "method": "GET"
+    }
+  ]
+}

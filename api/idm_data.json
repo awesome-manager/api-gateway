@@ -1,0 +1,45 @@
+{
+  "host": "http://idm-data",
+  "endpoints": [
+    {
+      "endpoint": "/api/v1/token/client",
+      "method": "POST",
+      "headers": ["Authorization", "Content-Type", "Content-Length"]
+    },
+    {
+      "endpoint": "/api/v1/token/user",
+      "method": "POST",
+      "headers": ["Authorization", "Content-Type", "Content-Length"]
+    },
+    {
+      "endpoint": "/api/v1/token/refresh",
+      "method": "POST",
+      "headers": ["Authorization", "Content-Type", "Content-Length"]
+    },
+    {
+      "endpoint": "/api/v1/token/user",
+      "method": "DELETE",
+      "headers": ["Authorization", "Content-Type", "Content-Length", "User-Token"]
+    },
+    {
+      "endpoint": "/api/v1/user",
+      "method": "GET",
+      "headers": ["Authorization", "Content-Type", "Content-Length", "User-Token"]
+    },
+    {
+      "endpoint": "/api/v1/user/{id}",
+      "method": "POST",
+      "headers": ["Authorization", "Content-Type", "Content-Length", "User-Token"]
+    },
+    {
+      "endpoint": "/api/v1/user/{id}/image",
+      "method": "POST",
+      "headers": ["Authorization", "Content-Type", "Content-Length", "User-Token"]
+    },
+    {
+      "endpoint": "/api/v1/user/{id}/image",
+      "method": "DELETE",
+      "headers": ["Authorization", "Content-Type", "Content-Length", "User-Token"]
+    }
+  ]
+}

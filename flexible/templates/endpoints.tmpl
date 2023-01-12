@@ -15,7 +15,7 @@
     {{- end }}
     "backend": [
       {
-        "host": ["{{ .backend }}"],
+        "host": ["{{ $.host }}"],
         "url_pattern": "{{ if .backend_url }}{{ .backend_url }}{{ else }}{{ .endpoint }}{{ end }}",
         "encoding": "{{ template "encoding" }}"
       }

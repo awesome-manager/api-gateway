@@ -1,0 +1,21 @@
+{
+  "host": "http://team-data",
+  "endpoints": [
+    {
+      "endpoint": "/api/v1/employees",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/api/v1/vacations",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/api/v1/grades",
+      "method": "GET"
+    },
+    {
+      "endpoint": "/api/v1/positions",
+      "method": "GET"
+    }
+  ]
+}

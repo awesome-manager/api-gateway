@@ -7,7 +7,9 @@
   "extra_config": {{ marshal .extra_config }},
   "endpoints": [
     {{- template "const.tmpl" -}}
-    {{ template "endpoints.tmpl" .api }}
+    {{ template "endpoints.tmpl" .idm_data }}
+    {{ template "endpoints.tmpl" .project_data }}
+    {{ template "endpoints.tmpl" .team_data }}
     {{ marshal .healthcheck }}
   ]
 }
